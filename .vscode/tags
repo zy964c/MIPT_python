@@ -9,6 +9,7 @@ Car	../cars.py	/^class Car(CarBase):$/;"	kind:class	line:19
 CarBase	../cars.py	/^class CarBase:$/;"	kind:class	line:5
 Client	../client.py	/^class Client(object):$/;"	kind:class	line:10
 ClientError	../client.py	/^class ClientError(Exception):$/;"	kind:class	line:4
+ClientServerProtocol	../server.py	/^class ClientServerProtocol(asyncio.Protocol):$/;"	kind:class	line:6
 File	../magic_methods.py	/^class File(object):$/;"	kind:class	line:4
 FileReader	../week3_solution.py	/^class FileReader(object):$/;"	kind:class	line:1
 ServerSocket	../test_week5.py	/^class ServerSocket:$/;"	kind:class	line:33
@@ -42,27 +43,35 @@ b	../sqrt_eq.py	/^b = int(sys.argv[2])$/;"	kind:variable	line:5
 c	../sqrt_eq.py	/^c = int(sys.argv[3])$/;"	kind:variable	line:6
 cars.py	../cars.py	1;"	kind:file	line:1
 client.py	../client.py	1;"	kind:file	line:1
+connection_made	../server.py	/^    def connection_made(self, transport):$/;"	kind:member	line:7
+coro	../server.py	/^coro = loop.create_server($/;"	kind:variable	line:21
 create_connection	../test_week5.py	/^    def create_connection(cls, *args, **kwargs):$/;"	kind:member	line:72
 d	../cars.py	/^d = {'car': Car, 'truck': Truck, 'spec_machine': SpecMachine}$/;"	kind:variable	line:52
+data_received	../server.py	/^    def data_received(self, data):$/;"	kind:member	line:11
 decorator.py	../decorator.py	1;"	kind:file	line:1
 descr.py	../descr.py	1;"	kind:file	line:1
 digit_string	../solution.py	/^digit_string = sys.argv[1]$/;"	kind:variable	line:4
-get	../client.py	/^    def get(self, metric):$/;"	kind:member	line:65
+get	../client.py	/^    def get(self, metric):$/;"	kind:member	line:63
 get_body_volume	../cars.py	/^    def get_body_volume(self):$/;"	kind:member	line:41
 get_car_list	../cars.py	/^def get_car_list(csv_filename):$/;"	kind:function	line:55
 get_data	../decorator.py	/^def get_data():$/;"	kind:function	line:14
 get_photo_file_ext	../cars.py	/^    def get_photo_file_ext(self):$/;"	kind:member	line:15
 hashes	../steps.py	/^    hashes = num_steps_init - spaces$/;"	kind:variable	line:6
+loop	../server.py	/^loop = asyncio.get_event_loop()$/;"	kind:variable	line:20
 magic_methods.py	../magic_methods.py	1;"	kind:file	line:1
 next	../magic_methods.py	/^    def next(self):$/;"	kind:member	line:30
 num_steps	../steps.py	/^num_steps = int(sys.argv[1])$/;"	kind:variable	line:2
 num_steps_init	../steps.py	/^num_steps_init = num_steps$/;"	kind:variable	line:3
-parse_metric	../client.py	/^    def parse_metric(metric):$/;"	kind:member	line:24
-put	../client.py	/^    def put(self, metric, m_value, timestamp=str(int(time.time()))):$/;"	kind:member	line:47
+parse_metric	../client.py	/^    def parse_metric(metric_recieved):$/;"	kind:member	line:20
+process_data	../server.py	/^    def process_data(self, data):$/;"	kind:member	line:15
+put	../client.py	/^    def put(self, metric, m_value, timestamp=str(int(time.time()))):$/;"	kind:member	line:48
 read	../week3_solution.py	/^    def read(self):$/;"	kind:member	line:5
 recv	../test_week5.py	/^    def recv(self, bytes_count):$/;"	kind:member	line:63
+run_server	../server.py	/^def run_server(host, port):$/;"	kind:function	line:3
 send	../test_week5.py	/^    def send(self, data):$/;"	kind:member	line:57
 sendall	../test_week5.py	/^    def sendall(self, data):$/;"	kind:member	line:54
+server	../server.py	/^server = loop.run_until_complete(coro)$/;"	kind:variable	line:26
+server.py	../server.py	1;"	kind:file	line:1
 setUpClass	../test_week5.py	/^    def setUpClass(cls):$/;"	kind:member	line:90
 solution.py	../solution.py	1;"	kind:file	line:1
 spaces	../steps.py	/^    spaces = num_steps - 1$/;"	kind:variable	line:5
