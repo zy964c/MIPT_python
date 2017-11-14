@@ -43,10 +43,10 @@ b	../sqrt_eq.py	/^b = int(sys.argv[2])$/;"	kind:variable	line:5
 c	../sqrt_eq.py	/^c = int(sys.argv[3])$/;"	kind:variable	line:6
 cars.py	../cars.py	1;"	kind:file	line:1
 client.py	../client.py	1;"	kind:file	line:1
-connection_made	../server.py	/^    def connection_made(self, transport):$/;"	kind:member	line:28
+connection_made	../server.py	/^    def connection_made(self, transport):$/;"	kind:member	line:30
 create_connection	../test_week5.py	/^    def create_connection(cls, *args, **kwargs):$/;"	kind:member	line:72
 d	../cars.py	/^d = {'car': Car, 'truck': Truck, 'spec_machine': SpecMachine}$/;"	kind:variable	line:52
-data_received	../server.py	/^    def data_received(self, data):$/;"	kind:member	line:32
+data_received	../server.py	/^    def data_received(self, data):$/;"	kind:member	line:33
 decorator.py	../decorator.py	1;"	kind:file	line:1
 descr.py	../descr.py	1;"	kind:file	line:1
 digit_string	../solution.py	/^digit_string = sys.argv[1]$/;"	kind:variable	line:4
@@ -61,7 +61,7 @@ next	../magic_methods.py	/^    def next(self):$/;"	kind:member	line:30
 num_steps	../steps.py	/^num_steps = int(sys.argv[1])$/;"	kind:variable	line:2
 num_steps_init	../steps.py	/^num_steps_init = num_steps$/;"	kind:variable	line:3
 parse_metric	../client.py	/^    def parse_metric(metric_recieved):$/;"	kind:member	line:20
-process_data	../server.py	/^    def process_data(self, data):$/;"	kind:member	line:36
+process_data	../server.py	/^    def process_data(cls, data):$/;"	kind:member	line:38
 put	../client.py	/^    def put(self, metric, m_value, timestamp=str(int(time.time()))):$/;"	kind:member	line:48
 read	../week3_solution.py	/^    def read(self):$/;"	kind:member	line:5
 recv	../test_week5.py	/^    def recv(self, bytes_count):$/;"	kind:member	line:63
@@ -74,6 +74,7 @@ solution.py	../solution.py	1;"	kind:file	line:1
 spaces	../steps.py	/^    spaces = num_steps - 1$/;"	kind:variable	line:5
 sqrt_eq.py	../sqrt_eq.py	1;"	kind:file	line:1
 steps.py	../steps.py	1;"	kind:file	line:1
+storage	../server.py	/^    storage = {}$/;"	kind:variable	line:28
 storage	../storage.py	/^def storage():$/;"	kind:function	line:6
 storage.py	../storage.py	1;"	kind:file	line:1
 sum	../solution.py	/^sum = 0$/;"	kind:variable	line:3

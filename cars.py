@@ -10,7 +10,7 @@ class CarBase:
         try:
             self.carrying = float(carrying)
         except ValueError:
-            pass    
+            pass
 
     def get_photo_file_ext(self):
         split_path = os.path.splitext(self.photo_file_name)
@@ -35,9 +35,9 @@ class Truck(CarBase):
                 self.body_width = float(self.params[1])
                 self.body_height = float(self.params[2])
             except ValueError:
-                print 'not correct volume'
+                print('not correct volume')
                 self.body_length, self.body_width, self.body_height = 0, 0, 0
-                
+
     def get_body_volume(self):
 
         if 0 not in self.params:
@@ -47,13 +47,13 @@ class Truck(CarBase):
 class SpecMachine(CarBase):
     def __init__(self, car_type, brand, photo_file_name, carrying, extra):
         CarBase.__init__(self, car_type, brand, photo_file_name, carrying)
-        self.extra = extra.decode("utf-8")
-
-d = {'car': Car, 'truck': Truck, 'spec_machine': SpecMachine}
-attrs = 'car_type;brand;passenger_seats_count;photo_file_name;body_whl;carrying;extra'
+        #self.extra = extra.decode("utf-8")
+        self.extra = extra
 
 def get_car_list(csv_filename):
     car_list = []
+    d = {'car': Car, 'truck': Truck, 'spec_machine': SpecMachine}
+    #attrs = 'car_type;brand;passenger_seats_count;photo_file_name;body_whl;carrying;extra'
     with open(csv_filename) as csv_fd:
         reader = csv.reader(csv_fd, delimiter=';')
         next(reader)  # пропускаем заголовок
@@ -67,10 +67,6 @@ def get_car_list(csv_filename):
                     car_list.append(d[row[0]](row[0], row[1], row[3], row[5], row[6]))
             except IndexError:
                 continue
-
     return car_list
 
-#car_list = get_car_list('_af3947bf3a1ba3333b0c891e7a8536fc_coursera_week3_cars.csv')
-#print car_list
-
-
+# print(get_car_list('cars.csv'))

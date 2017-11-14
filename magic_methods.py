@@ -3,7 +3,7 @@ import tempfile
 
 class File(object):
     def __init__(self, path):
-        self.path = path.encode('string_escape')
+        self.path = path.encode('unicode_escape')
         self.cur_pos = 0
 
     def write(self, data):
@@ -13,7 +13,7 @@ class File(object):
 
     def __add__(self, other):
         filenames = []
-        new_file_path = os.path.join(tempfile.gettempdir(), 'new.txt')
+        new_file_path = os.path.join(tempfile.gettempdir(), 'file.txt')
         new_file = File(new_file_path)
         filenames.append(self)
         filenames.append(other)
@@ -27,7 +27,7 @@ class File(object):
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         with open(self.path) as f:
             f.seek(self.cur_pos)
             res = f.readline()
