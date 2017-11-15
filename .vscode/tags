@@ -4,7 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-Account	../descr.py	/^class Account(object):$/;"	kind:class	line:1
+Account	../descr.py	/^class Account(object):$/;"	kind:class	line:11
 Car	../cars.py	/^class Car(CarBase):$/;"	kind:class	line:19
 CarBase	../cars.py	/^class CarBase:$/;"	kind:class	line:5
 Client	../client.py	/^class Client(object):$/;"	kind:class	line:10
@@ -17,51 +17,50 @@ ServerSocketException	../test_week5.py	/^class ServerSocketException(Exception):
 SpecMachine	../cars.py	/^class SpecMachine(CarBase):$/;"	kind:class	line:47
 TestClient	../test_week5.py	/^class TestClient(unittest.TestCase):$/;"	kind:class	line:86
 Truck	../cars.py	/^class Truck(CarBase):$/;"	kind:class	line:25
-Value	../descr.py	/^    class Value(object):$/;"	kind:class	line:3
+Value	../descr.py	/^class Value(object):$/;"	kind:class	line:1
 __add__	../magic_methods.py	/^    def __add__(self, other):$/;"	kind:member	line:14
 __enter__	../test_week5.py	/^    def __enter__(self):$/;"	kind:member	line:75
 __exit__	../test_week5.py	/^    def __exit__(self, exc_type, exc_val, exc_tb):$/;"	kind:member	line:78
-__get__	../descr.py	/^        def __get__(self, instance, owner):$/;"	kind:member	line:5
+__get__	../descr.py	/^    def __get__(self, instance, owner):$/;"	kind:member	line:3
 __getattr__	../test_week5.py	/^    def __getattr__(self, feature):$/;"	kind:member	line:81
 __init__	../cars.py	/^    def __init__(self, car_type, brand, photo_file_name, carrying):$/;"	kind:member	line:6
 __init__	../cars.py	/^    def __init__(self, car_type, brand, photo_file_name, carrying, body_whl):$/;"	kind:member	line:26
 __init__	../cars.py	/^    def __init__(self, car_type, brand, photo_file_name, carrying, extra):$/;"	kind:member	line:48
 __init__	../cars.py	/^    def __init__(self, car_type, brand, photo_file_name, carrying, passenger_seats_count):$/;"	kind:member	line:20
 __init__	../client.py	/^    def __init__(self, host, port, timeout=None):$/;"	kind:member	line:14
-__init__	../descr.py	/^    def __init__(self, commission):$/;"	kind:member	line:12
+__init__	../descr.py	/^    def __init__(self, commission):$/;"	kind:member	line:13
 __init__	../magic_methods.py	/^    def __init__(self, path):$/;"	kind:member	line:5
 __init__	../test_week5.py	/^    def __init__(self):$/;"	kind:member	line:36
 __init__	../week3_solution.py	/^    def __init__(self, path):$/;"	kind:member	line:2
 __iter__	../magic_methods.py	/^    def __iter__(self):$/;"	kind:member	line:27
-__set__	../descr.py	/^        def __set__(self, instance, value):$/;"	kind:member	line:8
+__next__	../magic_methods.py	/^    def __next__(self):$/;"	kind:member	line:30
+__set__	../descr.py	/^    def __set__(self, instance, value):$/;"	kind:member	line:6
 __str__	../magic_methods.py	/^    def __str__(self):$/;"	kind:member	line:40
-_amount	../descr.py	/^    _amount = 0$/;"	kind:variable	line:17
+_amount	../descr.py	/^    _amount = 0/;"	kind:variable	line:18
 a	../sqrt_eq.py	/^a = int(sys.argv[1])$/;"	kind:variable	line:4
-amount	../descr.py	/^    amount = Value()$/;"	kind:variable	line:16
-attrs	../cars.py	/^attrs = 'car_type;brand;passenger_seats_count;photo_file_name;body_whl;carrying;extra'$/;"	kind:variable	line:53
+amount	../descr.py	/^    amount = Value()$/;"	kind:variable	line:17
 b	../sqrt_eq.py	/^b = int(sys.argv[2])$/;"	kind:variable	line:5
 c	../sqrt_eq.py	/^c = int(sys.argv[3])$/;"	kind:variable	line:6
 cars.py	../cars.py	1;"	kind:file	line:1
 client.py	../client.py	1;"	kind:file	line:1
+config.py	../.ropeproject/config.py	1;"	kind:file	line:1
 connection_made	../server.py	/^    def connection_made(self, transport):$/;"	kind:member	line:30
 create_connection	../test_week5.py	/^    def create_connection(cls, *args, **kwargs):$/;"	kind:member	line:72
-d	../cars.py	/^d = {'car': Car, 'truck': Truck, 'spec_machine': SpecMachine}$/;"	kind:variable	line:52
 data_received	../server.py	/^    def data_received(self, data):$/;"	kind:member	line:33
 decorator.py	../decorator.py	1;"	kind:file	line:1
 descr.py	../descr.py	1;"	kind:file	line:1
 digit_string	../solution.py	/^digit_string = sys.argv[1]$/;"	kind:variable	line:4
 get	../client.py	/^    def get(self, metric):$/;"	kind:member	line:63
 get_body_volume	../cars.py	/^    def get_body_volume(self):$/;"	kind:member	line:41
-get_car_list	../cars.py	/^def get_car_list(csv_filename):$/;"	kind:function	line:55
-get_data	../decorator.py	/^def get_data():$/;"	kind:function	line:14
+get_car_list	../cars.py	/^def get_car_list(csv_filename):$/;"	kind:function	line:53
 get_photo_file_ext	../cars.py	/^    def get_photo_file_ext(self):$/;"	kind:member	line:15
 hashes	../steps.py	/^    hashes = num_steps_init - spaces$/;"	kind:variable	line:6
 magic_methods.py	../magic_methods.py	1;"	kind:file	line:1
-next	../magic_methods.py	/^    def next(self):$/;"	kind:member	line:30
 num_steps	../steps.py	/^num_steps = int(sys.argv[1])$/;"	kind:variable	line:2
 num_steps_init	../steps.py	/^num_steps_init = num_steps$/;"	kind:variable	line:3
 parse_metric	../client.py	/^    def parse_metric(metric_recieved):$/;"	kind:member	line:20
 process_data	../server.py	/^    def process_data(cls, data):$/;"	kind:member	line:38
+project_opened	../.ropeproject/config.py	/^def project_opened(project):$/;"	kind:function	line:113
 put	../client.py	/^    def put(self, metric, m_value, timestamp=str(int(time.time()))):$/;"	kind:member	line:48
 read	../week3_solution.py	/^    def read(self):$/;"	kind:member	line:5
 recv	../test_week5.py	/^    def recv(self, bytes_count):$/;"	kind:member	line:63
@@ -70,6 +69,7 @@ send	../test_week5.py	/^    def send(self, data):$/;"	kind:member	line:57
 sendall	../test_week5.py	/^    def sendall(self, data):$/;"	kind:member	line:54
 server.py	../server.py	1;"	kind:file	line:1
 setUpClass	../test_week5.py	/^    def setUpClass(cls):$/;"	kind:member	line:90
+set_prefs	../.ropeproject/config.py	/^def set_prefs(prefs):$/;"	kind:function	line:5
 solution.py	../solution.py	1;"	kind:file	line:1
 spaces	../steps.py	/^    spaces = num_steps - 1$/;"	kind:variable	line:5
 sqrt_eq.py	../sqrt_eq.py	1;"	kind:file	line:1

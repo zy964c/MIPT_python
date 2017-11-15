@@ -3,7 +3,8 @@ import tempfile
 
 class File(object):
     def __init__(self, path):
-        self.path = path.encode('unicode_escape')
+        #self.path = path.encode('unicode_escape')
+        self.path = path
         self.cur_pos = 0
 
     def write(self, data):
@@ -18,10 +19,10 @@ class File(object):
         filenames.append(self)
         filenames.append(other)
         with open(new_file_path, 'w') as new:
-                for f in filenames:
-                    with open(f.path) as infile:
-                        for line in infile:
-                            new.write(line)
+            for f in filenames:
+                with open(f.path) as infile:
+                    for line in infile:
+                        new.write(line)
         return new_file
 
     def __iter__(self):
